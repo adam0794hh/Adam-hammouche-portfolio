@@ -1,0 +1,134 @@
+
+.skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: #112E42;
+    color: #FFF;
+}
+
+.skills h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    font-size: 50px;
+    gap: 15px;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.skills-column {
+    width: 50%;
+    height: 50%;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.skills-content {
+    position: relative;
+    border: .2rem solid #0ef;
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.skills-box .skills-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #1F242D;
+    z-index: -1;
+    transition: .5 ease;
+}
+
+.skills-box .skills-content:hover::before {
+    width: 100%;
+}
+
+.progress {
+    padding: 1rem 0;
+}
+
+.git-contain {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.git-contain h3 {
+    font-size: 18px;
+}
+
+.git-contain a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #0ef;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+}
+
+.git-contain a i {
+    font-size: 1.2rem;
+    color: #112E42;
+    cursor: pointer;
+}
+
+.progress h3 {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress h3 span {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.bar {
+    height:1.8rem ;
+    border-radius:.6rem ;
+    border: .2rem solid #0ef;
+    padding: .3rem ;
+    margin: .1rem 0;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: #0ef;
+}
+
+.html {
+    width: 90%;
+}
+.css {
+    width: 80%;
+}
+.js {
+    width: 70%;
+}
+.wp {
+    width: 70%;
+}
+
+.react {
+    width: 70%;
+}
+
+.rnative {
+    width: 70%;
+}

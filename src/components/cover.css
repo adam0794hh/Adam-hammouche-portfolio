@@ -1,0 +1,253 @@
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+.home {
+  background-color: #081B29;
+  background: url('/public/banner-bg.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 0 9%;
+  align-items: center;
+}
+
+.home-content {
+  max-width: 50%;
+}
+
+.home-content h1 {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #eDeDeD;
+  white-space: nowrap;
+}
+
+.home-content h1 span {
+  font-size: 48px;
+}
+
+.home-content .text-animate {
+  position: relative;
+  width: 32.3rem;
+}
+
+.home-content .text-animate h3 {
+  font-size: 48px;
+  white-space: nowrap;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .7px #00abf0;
+  background-image: linear-gradient(#00abf0,#00abf0);
+  background-repeat: no-repeat;
+  background-clip: text;
+  background-position: -33rem 0;
+  animation: homeBgText 6s linear infinite;
+  animation-delay: 2s
+}
+
+.home-content .text-animate h3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid #00abf0;
+  z-index: 1;
+  animation: homeCursorText 6s linear infinite;
+  animation-delay: 2s
+}
+
+.home-content p {
+  font-size: 16px;
+  margin: 1rem 0 4rem;
+  color: #eDeDeD;
+}
+
+.btn-box {
+  width: 25.5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-box .btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 70%;
+  background-color: #00abf0;
+  border: .2rem solid #00abf0;
+  border-radius: 1.2rem;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  color: #081B29;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.btn-box .btn:hover {
+  color: #00abf0;
+}
+
+.btn-box .btn:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+
+.btn-box .btn:nth-child(2)::before {
+  background: #00abf0;
+}
+
+.btn-box .btn:nth-child(2):hover {
+  color: #081B29;
+}
+
+.btn-box .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081B29;
+  z-index: -1;
+  transition: .5s;
+}
+
+.btn-box .btn:hover::before {
+  width: 100%;
+}
+
+.social-media {
+  position: absolute;
+  bottom:0;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: .2rem solid #00abf0;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #00abf0;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  background: #00abf0;
+  color: #081B29;
+  box-shadow: 0 0 1rem #00abf0;
+}
+
+.img-cover {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url("/public/header1-img.svg") no-repeat;
+  background-position: center;
+  animation: UpDown 3s linear infinite;
+}
+
+.img-hover:hover {
+  background: #081B29;
+  opacity: 0.8;
+}
+
+
+/* KEY FRAMES Animation */
+
+@keyframes homeBgText {
+  0%,10%,100% {
+    background-position: -33rem 0;
+  }
+  65%,85% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes homeCursorText {
+  0%,10%,100% {
+    width: 0;
+  }
+  65%,78%,85% {
+    width: 100%;
+    opacity: 1;
+  }
+  75%,81% {
+    opacity: 0;
+  }
+}
+
+@keyframes UpDown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+
+@media (max-width: 767px) {
+  .Cover {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .intro {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-45%);
+    text-align: center;
+  }
+
+  .scale-animation {
+    white-space: nowrap;
+    font-size: 35px;
+  }
+
+  .intro h2 {
+    font-size: 25px;
+  }
+
+  .intro p {
+    margin-bottom: 0;
+    white-space: normal;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  .cover-img {
+    width: 100%;
+    height: 100vh;
+  }
+}
