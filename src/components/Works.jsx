@@ -5,7 +5,7 @@ import WorkWrap from './WorkWrap'
 function Works() {
   return (
     <section id='Works' className='works'>
-      <h2 className='heading'>Nos <span>Services</span></h2>
+      <h2 className='heading'>Mes <span>Services</span></h2>
       <div className='works-container'>
         <WorkWrap
           title={"APPLICATIONS E-COMMERCE"}

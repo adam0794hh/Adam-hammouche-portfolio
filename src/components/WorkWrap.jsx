@@ -6,7 +6,7 @@ function WorkWrap({ icon, title, description }) {
       <i className={`fas ${icon}`}></i>
       <h3 className='wrap-title'>{title}</h3>
       <p>{description}</p>
-      <a href="#" className="btn2">En savoir plus</a>
+      <a href="#skills" className="btn2">En savoir plus</a>
     </div>
   )
 }

@@ -17,7 +17,7 @@ function Navbar() {
         if (scrolly >= 0 && scrolly < 735) {
             setActiveSection('Accueil');
         } else if (scrolly >= 735 && scrolly < 1512) {
-            setActiveSection('Mon Travail');
+            setActiveSection('Services');
         } else if (scrolly >= 1512 && scrolly < 2559) {
             setActiveSection('Portfolio');
         } else if (scrolly >= 2559 && scrolly < 3592) {
@@ -65,8 +65,8 @@ function Navbar() {
             <nav className={`navbar ${showMenu ? 'show' : ''}`}>
                 <a href='#' className={` ${activeSection === 'Accueil' ? 'active' : ''}`}
                     onClick={() => handleClick('Accueil', 'Accueil')}>Accueil</a>
-                <a href='#Works' className={` ${activeSection === 'Mon Travail' ? 'active' : ''}`}
-                    onClick={() => handleClick('Mon Travail', 'Mon Travail')}>Mon Travail</a>
+                <a href='#Works' className={` ${activeSection === 'Services' ? 'active' : ''}`}
+                    onClick={() => handleClick('Services', 'Services')}>Services</a>
                 <a href='#Portfolio' className={` ${activeSection === 'Portfolio' ? 'active' : ''}`}
                     onClick={() => handleClick('Portfolio', 'Portfolio')} >Portfolio</a>
                 <a href='#skills' className={` ${activeSection === 'Competences' ? 'active' : ''}`}
