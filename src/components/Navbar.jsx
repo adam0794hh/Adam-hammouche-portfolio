@@ -45,6 +45,7 @@ function Navbar() {
         setActiveItem(item);
         setActiveSection(section);
         setShowMenu(false);
+        setChangeIcon(false);
 
     };
     const toggleNavbar = () => {

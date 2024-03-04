@@ -40,7 +40,7 @@ section {
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: .7px #00abf0;
-  background-image: linear-gradient(#00abf0,#00abf0);
+  background-image: linear-gradient(#00abf0, #00abf0);
   background-repeat: no-repeat;
   background-clip: text;
   background-position: -33rem 0;
@@ -128,7 +128,7 @@ section {
 
 .social-media {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   width: 250px;
   display: flex;
   justify-content: space-between;
@@ -177,23 +177,36 @@ section {
 /* KEY FRAMES Animation */
 
 @keyframes homeBgText {
-  0%,10%,100% {
+
+  0%,
+  10%,
+  100% {
     background-position: -33rem 0;
   }
-  65%,85% {
+
+  65%,
+  85% {
     background-position: 0 0;
   }
 }
 
 @keyframes homeCursorText {
-  0%,10%,100% {
+
+  0%,
+  10%,
+  100% {
     width: 0;
   }
-  65%,78%,85% {
+
+  65%,
+  78%,
+  85% {
     width: 100%;
     opacity: 1;
   }
-  75%,81% {
+
+  75%,
+  81% {
     opacity: 0;
   }
 }
@@ -202,9 +215,11 @@ section {
   0% {
     transform: translateY(-30px);
   }
-  50%{
+
+  50% {
     transform: translateY(30px);
   }
+
   100% {
     transform: translateY(-30px);
   }
@@ -212,42 +227,50 @@ section {
 
 
 @media (max-width: 767px) {
-  .Cover {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
+  .home {
+    background-position: right;
+    padding: 0 9%;
+  }
+  .home-content h1 {
+    font-size: 18px;
+  }
+  .home-content h1 span {
+    font-size: 22px;
+  }
+  .home-content .text-animate {
+    width: 215px;
+  }
+  .home-content .text-animate h3 {
+    font-size: 20px;
+  }
+  .home-content p {
+    font-size: 13px;
+  }
+  .img-cover {
+    background: url("/public/header1-img\ \(1\).svg") no-repeat;
+    top: 30%;
+    left: 48%;
+  }
+  .btn-box {
+    width: 17rem;
+  }
+  .btn-box .btn {
+    width: 8rem;
+    font-size: 13px;
+    height: 55%;
   }
 
-  .intro {
-    width: 100%;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-45%);
-    text-align: center;
-  }
+  @keyframes homeBgText {
 
-  .scale-animation {
-    white-space: nowrap;
-    font-size: 35px;
-  }
-
-  .intro h2 {
-    font-size: 25px;
-  }
-
-  .intro p {
-    margin-bottom: 0;
-    white-space: normal;
-  }
-
-  .btn {
-    margin-top: 10px;
-  }
-
-  .cover-img {
-    width: 100%;
-    height: 100vh;
+    0%,
+    10%,
+    100% {
+      background-position: -215px 0;
+    }
+  
+    65%,
+    85% {
+      background-position: 0 0;
+    }
   }
 }
