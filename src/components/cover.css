@@ -230,19 +230,19 @@ section {
     background-position: left;
   }
   .home-content h1 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .home-content h1 span {
-    font-size: 30px;
+    font-size: 20px;
   }
   .home-content .text-animate {
-    width: 320px;
+    width: 215px;
   }
   .home-content .text-animate h3 {
-    font-size: 30px;
+    font-size: 20px;
   }
   .home-content p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .img-cover {
     top: 30%;
@@ -265,7 +265,7 @@ section {
     0%,
     10%,
     100% {
-      background-position: -320px 0;
+      background-position: -215px 0;
     }
   
     65%,
@@ -276,7 +276,7 @@ section {
 }
 
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .home {
     background-position: right;
     padding: 0 7%;
@@ -326,4 +326,4 @@ section {
       background-position: 0 0;
     }
   }
-}
+} */
