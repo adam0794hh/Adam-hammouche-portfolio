@@ -132,3 +132,22 @@
 .rnative {
     width: 70%;
 }
+
+@media (max-width: 768px) {
+
+ .skills-row {
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .skills h2 {
+    font-size: 17px;
+ }
+ 
+ h2 span {
+     font-size: 20px;
+ }
+ .skills-column {
+    width: 100%;
+ }
+}

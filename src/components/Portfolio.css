@@ -157,41 +157,9 @@ span {
     color: #fff;
 }
 
-@keyframes cardDisappear {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-}
-
-
-.card-disappear {
-    animation: cardDisappear 0.4s ease-in forwards;
-}
 
 @media (max-width:991px) {
-    .site-card img {
-        filter: brightness(50%);
-    }
-
-    .Portfolio-desc {
-        background: none;
-        opacity: 1;
-        color: white;
-    }
-
-    .Portfolio-desc h3 {
-        font-size: 14px;
-    }
-
-    .Portfolio-desc p {
-        font-size: 10px;
-    }
+    
 }
 
 
@@ -200,34 +168,10 @@ span {
         display: flex;
         flex-direction: column;
     }
-
-    .site-cards-container a {
-        width: 100%;
+    .site-card:hover .Portfolio-desc {
+        transform: none;
     }
-
-    .portfolio-title {
-        font-size: 0;
-    }
-
-    .portfolio-title h2 {
-        font-size: 30px;
-    }
-
-    .Portfolio-desc {
-        background: none;
-        opacity: 1;
-        color: white;
-    }
-
-    .site-card img {
-        filter: brightness(50%);
-    }
-
-    .Portfolio-desc h3 {
-        font-size: 22px;
-    }
-
-    .Portfolio-desc p {
-        font-size: 16px;
+    .site-card:hover img {
+        transform: none;
     }
 }
