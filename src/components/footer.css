@@ -104,9 +104,14 @@
 }
 
 @media (max-width:768px) {
+    .contact {
+        position: relative;
+    }
     .footer {
         padding: 1rem 4%;
-        margin-top: 122px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
     }
 
     .footer-text {
@@ -120,7 +125,7 @@
     }
 
     .email-icon {
-        width: 200px;
+        width: 250px;
     }
 
     .icon-top a i {
