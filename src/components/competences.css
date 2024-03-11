@@ -141,11 +141,14 @@
  }
 
  .skills h2 {
-    font-size: 17px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    gap: 0;
  }
  
  h2 span {
-     font-size: 20px;
+    font-size: 30px;
  }
  .skills-column {
     width: 100%;

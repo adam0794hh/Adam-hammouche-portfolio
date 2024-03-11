@@ -85,15 +85,17 @@
 /* Media query for mobile devices */
 @media (max-width: 767px) {
 
-    body {
-        font-size: 4px;
-    }
     .header {
         background: #081B29;
     }
 
+    .logo {
+        font-size: 1.5rem;
+    }
+
     .menu-icon {
         display: block;
+        font-size: 1.7rem;
     }
 
     .navbar {

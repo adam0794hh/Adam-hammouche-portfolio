@@ -248,7 +248,7 @@ section {
     top: 30%;
     background-size: contain;
     left: 50%;
-    height: 50%;
+    height: 35%;
     width: 45%;
   }
   .btn-box {
@@ -271,59 +271,22 @@ section {
     65%,
     85% {
       background-position: 0 0;
+    }
+  }
+
+  @keyframes UpDown {
+    0% {
+      transform: translateY(-20px);
+    }
+  
+    50% {
+      transform: translateY(20px);
+    }
+  
+    100% {
+      transform: translateY(-20px);
     }
   }
 }
 
 
-/* @media (max-width: 500px) {
-  .home {
-    background-position: right;
-    padding: 0 7%;
-  }
-  .home-content h1 {
-    font-size: 18px;
-  }
-  .home-content h1 span {
-    font-size: 20px;
-  }
-  .home-content .text-animate {
-    width: 215px;
-  }
-  .home-content .text-animate h3 {
-    font-size: 20px;
-  }
-  .home-content p {
-    font-size: 13px;
-  }
-  .img-cover {
-    background: url("/public/header1-mobile.svg") no-repeat;
-    top: 38%;
-    background-size: contain;
-    left: 50%;
-    height: 20%;
-    width: 45%;
-  }
-  .btn-box {
-    width: 17rem;
-  }
-  .btn-box .btn {
-    width: 8rem;
-    font-size: 13px;
-    height: 55%;
-  }
-
-  @keyframes homeBgText {
-
-    0%,
-    10%,
-    100% {
-      background-position: -215px 0;
-    }
-  
-    65%,
-    85% {
-      background-position: 0 0;
-    }
-  }
-} */

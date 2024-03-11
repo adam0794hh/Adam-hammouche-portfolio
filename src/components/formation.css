@@ -89,3 +89,23 @@
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+@media (max-width: 768px) {
+    .heading {
+         font-size: 30px;
+    }
+    .heading span {
+        font-size: 30px;
+    }
+    .formation-img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .formation-content h3 {
+        font-size: 1.5rem;
+    }
+    .formation-content p {
+        font-size: .9rem;
+        margin-bottom: 3rem;
+    }
+}

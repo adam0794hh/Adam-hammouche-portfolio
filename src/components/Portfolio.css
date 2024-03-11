@@ -164,14 +164,40 @@ span {
 
 
 @media (max-width:767px) {
+    .portfolio-title h2 {
+        font-size: 30px;
+    }
+    .portfolio-title span {
+        font-size: 30px;
+    }
     .site-cards-container {
         display: flex;
         flex-direction: column;
     }
-    .site-card:hover .Portfolio-desc {
-        transform: none;
+     a {
+        width: 100%;
+    }
+    .Portfolio-desc {
+        transform: translateY(0%);
     }
     .site-card:hover img {
         transform: none;
+    }
+    .button-box {
+        width: 100%;
+        gap: 8px;
+    }
+    .button {
+        width: 40%;
+        height: 35px;
+        display: inline-flex;
+        font-size: 8px;
+        padding: 0.3rem 0.6rem;
+    }
+    .Portfolio-desc p {
+        font-size: 12px;
+    }
+    .Portfolio-desc h4 {
+        font-size: 1.6rem;
     }
 }
