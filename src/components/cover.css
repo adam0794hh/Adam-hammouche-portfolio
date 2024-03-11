@@ -276,15 +276,15 @@ section {
 
   @keyframes UpDown {
     0% {
-      transform: translateY(-20px);
+      transform: translateY(-15px);
     }
   
     50% {
-      transform: translateY(20px);
+      transform: translateY(15px);
     }
   
     100% {
-      transform: translateY(-20px);
+      transform: translateY(-15px);
     }
   }
 }
