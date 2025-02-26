@@ -7,6 +7,8 @@ a {
 }
 
 .portfolio-title {
+    position: relative;
+    height: 100px;
     color: #FFF;
     font-size: 35px;
     padding-bottom: 60px;
@@ -120,8 +122,9 @@ span {
 }
 
 .button-box {
+    position: relative;
     width: 50%;
-    margin: 0 0 24px 0;
+    margin: 20px 0 24px 0;
     overflow: hidden;
     text-align: center;
     display: flex;
@@ -155,6 +158,11 @@ span {
     background-color: #0ef;
     box-shadow: 0 0 .2rem #0ef;
     color: #fff;
+}
+
+.portfolio.show-animate .animate.scroll {
+    transition-delay: calc(.3 * var('--i'));
+    width: 0;
 }
 
 

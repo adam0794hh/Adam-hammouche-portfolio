@@ -30,12 +30,15 @@
 }
 
 .logo {
+    position: relative;
     font-size: 2.5rem;
     color: #FFF;
     font-weight: 600;
+    width: auto;
 }
 
 .navbar {
+    position: relative;
     display: flex;
 }
 
@@ -51,6 +54,7 @@
 }
 
 .menu-icon {
+    position: relative;
     font-size: 2.5rem;
     color: #FFF;
     cursor: pointer;
@@ -58,7 +62,7 @@
 }
 
 
-/* .animate {
+.animate {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,11 +73,11 @@
 }
 
 .logo .animate,
-.nav-menu .animate,
+.navbar .animate,
 .menu-icon .animate {
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3 * var('--i'));
-} */
+}
 
 @keyframes showRight {
     100% {

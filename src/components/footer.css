@@ -1,5 +1,5 @@
 .contact {
-    background: #081B29;
+    background: #1F242D;
     color: #FFF;
     text-align: center;
     padding-left: 0;
@@ -16,6 +16,7 @@
 }
 
 .contact-details {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,6 +48,7 @@
 }
 
 .footer {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,6 +89,11 @@
 .icon-top a i {
     font-size: 22px;
     color: #081B29;
+}
+
+.contact.show-animate .animate.scroll {
+    transition-delay: calc(.3 * var('--i'));
+    width: 0;
 }
 
 @keyframes move {

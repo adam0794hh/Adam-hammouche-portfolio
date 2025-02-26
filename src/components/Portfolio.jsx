@@ -3,7 +3,7 @@ import SiteCard from './SiteCard';
 import "../components/Portfolio.css"
 import projects from "../data"
 
-function Portfolio() {
+function Portfolio({ activeSection, handleClick }) {
 
   // État local pour suivre le filtre actif
   const [activeFilter, setActiveFilter] = useState('all');
@@ -20,10 +20,11 @@ function Portfolio() {
     return false;
   });
   return (
-    <section id='Portfolio'>
+    <section id='Portfolio' className={`portfolio ${activeSection === 'Portfolio' ? 'show-animate' : ''}`}>
       <div className='filter-button'>
         <div className='portfolio-title'>
           <h2>Mon <span>Portfolio</span></h2>
+          <span className="animate scroll" style={{ '--i': 1 }}></span>
         </div>
         <div className="button-box">
           <button
@@ -44,6 +45,7 @@ function Portfolio() {
           >
             Sites Dynamiques
           </button>
+          <span className="animate scroll" style={{ '--i': 2 }}></span>
         </div>
       </div>
       <div className="site-cards-container">

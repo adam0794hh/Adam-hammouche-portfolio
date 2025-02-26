@@ -23,6 +23,7 @@ span {
 }
 
 .works-container .works-box {
+    position: relative;
     flex: 1 1 30rem;
     background: #112E42;
     padding: 3rem 2rem 4rem;
@@ -62,6 +63,11 @@ span {
     color: #323946;
     letter-spacing: 0.1rem;
     font-weight: 600;
+}
+
+.works.show-animate .animate.scroll {
+    transition-delay: calc(.3 * var('--i'));
+    width: 0;
 }
 
 @media (max-width: 768px) {

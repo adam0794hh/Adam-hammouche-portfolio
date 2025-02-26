@@ -1,5 +1,5 @@
 .formation {
-    background: #081B29;
+    background: #112E42;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +10,7 @@
 }
 
 .heading {
+    position: relative;
     font-size: 50px;
     margin-bottom: 1rem;
     text-align: center;
@@ -51,11 +52,14 @@
 }
 
 .formation-content h3 {
+    position: relative;
+    display: inline-block;
     font-size: 2rem;
 }
 
 .formation-content p {
-    font-size: 1.1rem;
+    position: relative;
+    font-size: 1rem;
     margin: 1rem 0 2rem;
 }
 
@@ -83,6 +87,16 @@
     background-color: #0ef;
 }
 
+.animate.scroll {
+    transition: 1s ease;
+    transition-delay: calc(.3 / var('--i'));
+    animation: none;
+}
+
+.formation.show-animate .animate.scroll {
+    transition-delay: calc(.3 * var('--i'));
+    width: 0;
+}
 
 @keyframes Spinners { 
     100% {

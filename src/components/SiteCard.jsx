@@ -45,9 +45,10 @@ function SiteCard({ title, description, image, icon }) {
         <div className="Portfolio-desc">
           <h4>{title}</h4>
           <p>{description}</p>
-          <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       ) : null}
+      <span className="animate scroll" style={{ '--i': 1 }}></span>
     </div>
   );
 }

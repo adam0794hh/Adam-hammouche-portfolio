@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./competences.css";
 
-function Competences() {
+function Competences({ activeSection }) {
   return (
-    <section className='skills' id='skills'>
-      <h2>Mes <span>Competences</span></h2>
+    <section id='skills' className={`skills ${activeSection === 'skills' ? 'show-animate' : ''}`}>
+      <h2>Mes <span>Competences</span><span className="animate scroll" style={{ '--i': 1 }}></span></h2>
       <div className="skills-row">
         <div className="skills-column">
+          <span className="animate scroll" style={{ '--i': 2 }}></span>
           <h3 className="title">Skills Code</h3>
           <div className="skills-box">
             <div className="skills-content">
@@ -45,6 +46,7 @@ function Competences() {
         </div>
 
         <div className="skills-column">
+          <span className="animate scroll" style={{ '--i': 3 }}></span>
           <h3 className="title">Repo GitHub</h3>
           <div className="skills-box">
             <div className="skills-content">

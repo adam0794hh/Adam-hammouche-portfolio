@@ -7,9 +7,8 @@
 }
 
 .skills h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    text-align: center;
     margin-bottom: 60px;
     font-size: 50px;
     gap: 15px;
@@ -22,6 +21,7 @@
 }
 
 .skills-column {
+    position: relative;
     width: 50%;
     height: 50%;
 }
@@ -131,6 +131,11 @@
 
 .rnative {
     width: 70%;
+}
+
+.skills.show-animate .animate.scroll {
+    transition-delay: calc(.3 * var('--i'));
+    width: 0;
 }
 
 @media (max-width: 768px) {
