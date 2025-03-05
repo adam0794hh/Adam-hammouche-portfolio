@@ -48,7 +48,6 @@ function SiteCard({ title, description, image, icon }) {
           <a><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       ) : null}
-      <span className="animate scroll" style={{ '--i': 1 }}></span>
     </div>
   );
 }

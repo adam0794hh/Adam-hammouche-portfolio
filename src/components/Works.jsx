@@ -5,7 +5,7 @@ import WorkWrap from './WorkWrap'
 function Works({ activeSection }) {
   return (
     <section id='Works' className={`works ${activeSection === 'Works' ? 'show-animate' : ''}`}>
-      <h2 className='heading'>Mes <span>Services</span><span className="animate scroll" style={{ '--i': 1 }}></span></h2>
+      <h2 className='heading'>Mes <span>Services</span></h2>
       <div className='works-container'>
         <WorkWrap
           title={"APPLICATIONS E-COMMERCE"}

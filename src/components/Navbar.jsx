@@ -12,24 +12,23 @@ function Navbar({ activeSection, handleNavClick }) {
 
     const handleScroll = () => {
         const scrolly = window.scrollY;
-        console.log("Scroll Y:", scrolly);
+        console.log("Scroll Y: ", scrolly)
         setShowNavbar(scrolly > 200);
         if (scrolly >= 0 && scrolly < 735.20) {
             handleNavClick('home');
-        } else if (scrolly >= 735.20 && scrolly < 1512.80) {
+        } else if (scrolly >= 735.20 && scrolly < 1621.19) {
             handleNavClick('Works');
-        } else if (scrolly >= 1512.80 && scrolly < 2528.80) {
+        } else if (scrolly >= 1621.19 && scrolly < 2868.800048828125) {
             handleNavClick('Portfolio');
-        } else if (scrolly >= 2528.80 && scrolly < 3562.39) {
+        } else if (scrolly >= 2868.800048828125 && scrolly < 3902.39990234375) {
             handleNavClick('skills');
-        } else if (scrolly >= 3562.39 && scrolly < 4572.79) {
+        } else if (scrolly >= 3902.39990234375 && scrolly < 4780) {
             handleNavClick('formation');
-        } else if (scrolly >= 4572.79) {
+        } else if (scrolly >= 4780) {
             handleNavClick('Contact');
         }
 
     };
-
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -60,33 +59,31 @@ function Navbar({ activeSection, handleNavClick }) {
 
     return (
         <header className={`header ${showNavbar ? 'show' : ''}`}>
-            <a href="#" className='logo'>Adam.<span className="animate" style={{ '--i': 1 }}></span></a>
+            <a href="#" className='logo'>Adam.</a>
             <div className="menu-icon">
                 <FontAwesomeIcon
                     onClick={toggleNavbar}
                     className="menu-icon"
                     icon={changeIcon ? faTimes : faBars}>
                 </FontAwesomeIcon>
-                <span className="animate" style={{ '--i': 2 }}></span>
             </div>
 
 
             <nav className={`navbar ${showMenu ? 'show' : ''}`}>
-                <a href='#' className={` ${activeSection === 'home' ? 'active' : ''}`}
+                <a href='#'
                     onClick={() => handleClick('Accueil', 'home')}>Accueil</a>
-                <a href='#Works' className={` ${activeSection === 'Works' ? 'active' : ''}`}
+                <a href='#Works'
                     onClick={() => handleClick('Services', 'Works')}>Services</a>
-                <a href='#Portfolio' className={` ${activeSection === 'Portfolio' ? 'active' : ''}`}
+                <a href='#Portfolio' 
                     onClick={() => handleClick('Portfolio', 'Portfolio')} >Portfolio</a>
-                <a href='#skills' className={` ${activeSection === 'skills' ? 'active' : ''}`}
+                <a href='#skills'
                     onClick={() => handleClick('Competences', 'skills')} >Competences</a>
-                <a href='#formation' className={` ${activeSection === 'formation' ? 'active' : ''}`}
+                <a href='#formation'
                     onClick={() => handleClick('formation', 'formation')} >Formation</a>
-                <a href='#Contact' className={` ${activeSection === 'Contact' ? 'active' : ''}`}
+                <a href='#Contact'
                     onClick={() => handleClick('Contact', 'Contact')} >Contact</a>
 
                 <span className="active-nav"></span>
-                <span className="animate" style={{ '--i': 2 }}></span>
             </nav>
         </header >
     )

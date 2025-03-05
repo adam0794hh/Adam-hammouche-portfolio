@@ -24,7 +24,6 @@ function Portfolio({ activeSection, handleClick }) {
       <div className='filter-button'>
         <div className='portfolio-title'>
           <h2>Mon <span>Portfolio</span></h2>
-          <span className="animate scroll" style={{ '--i': 1 }}></span>
         </div>
         <div className="button-box">
           <button
@@ -45,7 +44,6 @@ function Portfolio({ activeSection, handleClick }) {
           >
             Sites Dynamiques
           </button>
-          <span className="animate scroll" style={{ '--i': 2 }}></span>
         </div>
       </div>
       <div className="site-cards-container">
