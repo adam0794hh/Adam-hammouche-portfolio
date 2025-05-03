@@ -16,6 +16,10 @@ function Portfolio({ activeSection, handleClick }) {
       return project.type === 'site_vitrine'; // Afficher uniquement les projets de type "site_vitrine"
     } else if (activeFilter === 'site_dynamique') {
       return project.type === 'site_dynamique'; // Afficher uniquement les projets de type "site_dynamique"
+    } else if (activeFilter === 'site_wordpress') {
+      return project.type === 'site_wordpress'; // Afficher uniquement les projets de type "site_wordpress"
+    } else if (activeFilter === 'site_fullstack') {
+      return project.type === 'site_fullstack'; // Afficher uniquement les projets de type "site_fullstack"
     }
     return false;
   });
@@ -26,24 +30,40 @@ function Portfolio({ activeSection, handleClick }) {
           <h2>Mon <span>Portfolio</span></h2>
         </div>
         <div className="button-box">
-          <button
-            className={activeFilter === 'all' ? 'button active' : 'button'}
-            onClick={() => setActiveFilter('all')}
-          >
-            Tous
-          </button>
-          <button
-            className={activeFilter === 'site_vitrine' ? 'button active' : 'button'}
-            onClick={() => setActiveFilter('site_vitrine')}
-          >
-            Sites Vitrines
-          </button>
-          <button
-            className={activeFilter === 'site_dynamique' ? 'button active' : 'button'}
-            onClick={() => setActiveFilter('site_dynamique')}
-          >
-            Sites Dynamiques
-          </button>
+          <div className='box-1' >
+            <button
+              className={activeFilter === 'all' ? 'button active' : 'button'}
+              onClick={() => setActiveFilter('all')}
+            >
+              Tous
+            </button>
+            <button
+              className={activeFilter === 'site_vitrine' ? 'button active' : 'button'}
+              onClick={() => setActiveFilter('site_vitrine')}
+            >
+              Sites Vitrines
+            </button>
+            {/* <button
+              className={activeFilter === 'site_dynamique' ? 'button active' : 'button'}
+              onClick={() => setActiveFilter('site_dynamique')}
+            >
+              Sites Dynamiques
+            </button> */}
+          </div>
+          <div className='box-1'>
+            <button
+              className={activeFilter === 'site_wordpress' ? 'button active' : 'button'}
+              onClick={() => setActiveFilter('site_wordpress')}
+            >
+              Sites Wordpress
+            </button>
+            <button
+              className={activeFilter === 'site_fullstack' ? 'button active' : 'button'}
+              onClick={() => setActiveFilter('site_fullstack')}
+            >
+              Sites Fullstack
+            </button>
+          </div>
         </div>
       </div>
       <div className="site-cards-container">

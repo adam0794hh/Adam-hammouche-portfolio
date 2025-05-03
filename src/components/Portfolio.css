@@ -69,7 +69,7 @@ span {
 }
 
 .Portfolio-desc h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .Portfolio-desc p {
@@ -123,19 +123,29 @@ span {
 
 .button-box {
     position: relative;
-    width: 50%;
+    width: 100%;
     margin: 20px 0 24px 0;
     overflow: hidden;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 20px;
 }
 
+.box-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 .button {
-    width: 220px;
+    width: 20%;
     height: 50px;
     align-items: center;
     justify-content: center;
@@ -193,13 +203,16 @@ span {
     }
     .button-box {
         width: 100%;
-        gap: 8px;
+        gap: 15px;
+    }
+    .box-1 {
+        gap: 15px;
     }
     .button {
-        width: 40%;
+        width: 70%;
         height: 35px;
         display: inline-flex;
-        font-size: 8px;
+        font-size: 12px;
         padding: 0.3rem 0.6rem;
     }
     .Portfolio-desc p {
