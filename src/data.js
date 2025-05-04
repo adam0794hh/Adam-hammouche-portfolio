@@ -62,6 +62,16 @@ const projects = [
         type: 'site_wordpress',
         url: 'https://www.tresordemusc.fr/'
     },
+    {
+        id: 7,
+        title: 'Sibtbib',
+        description: `Développement du site web Sibtbib en fullstack avec Node.js et React.
+        Création d’une interface utilisateur et d’une plateforme admin connectées à un backend commun.
+        Techno : Node.js, Express, MongoDB, React.`,
+        image: '/portfolio7.jpg',
+        type: 'site_fullstack',
+        url: 'https://sibtbib-frontend.vercel.app/'
+    },
 
 ];
 export default projects;

@@ -60,8 +60,8 @@ function Competences({ activeSection }) {
               </div>
 
               <div className="git-contain">
-                <h3>Projet Nina Carducci</h3>
-                <a target='_blank' rel='noopener noreferrer' href='https://github.com/adam0794hh/ninacarducci.github.io-main.git'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <h3>Projet Sibtbib</h3>
+                <a target='_blank' rel='noopener noreferrer' href='https://github.com/adam0794hh/Sibtbib.git'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
 
               <div className="git-contain">
@@ -69,10 +69,10 @@ function Competences({ activeSection }) {
                 <a target='_blank' rel='noopener noreferrer' href='https://github.com/adam0794hh/kasa.git'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
 
-              <div className="git-contain">
+              {/* <div className="git-contain">
                 <h3>Projet Print It</h3>
                 <a target='_blank' rel='noopener noreferrer' href='https://github.com/adam0794hh/ProjetPrintit.git'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
