@@ -33,16 +33,6 @@ const projects = [
         url: 'https://www.kardounecosmetique.fr/'
     },
     {
-        id: 4,
-        title: 'Glowy Agency',
-        description: `Conception du site e-commerce Glowy Agency sous WordPress avec Elementor. 
-        Mise en place de la boutique en ligne et d’un design épuré. 
-        Techno : WordPress, Elementor, WooCommerce.`,
-        image: '/portfolio3.jpg',
-        type: 'site_wordpress',
-        url: 'https://www.glowy-agency.fr/'
-    },
-    {
         id: 5,
         title: 'Kasa',
         description:
@@ -51,16 +41,6 @@ const projects = [
         image: '/portfolio4.jpg',
         type: 'site_vitrine',
         url: 'https://oc-project-kasa.netlify.app/'
-    },
-    {
-        id: 6,
-        title: 'Tresor de Musc',
-        description: `Création du site e-commerce Trésor de Musc avec WordPress et Elementor. 
-        Mise en place d'une boutique responsive, optimisée UX/UI. 
-        Techno : WordPress, Elementor, WooCommerce.`,
-        image: '/portfolio5.jpg',
-        type: 'site_wordpress',
-        url: 'https://www.tresordemusc.fr/'
     },
     {
         id: 7,
