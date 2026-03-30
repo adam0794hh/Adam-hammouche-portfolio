@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SiteCard from './SiteCard';
 import "../components/Portfolio.css"
-import projects from "../data"
+import projects from "../data.js"
 
 function Portfolio({ activeSection, handleClick }) {
 
