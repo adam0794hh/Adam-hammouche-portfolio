@@ -60,7 +60,7 @@ const projects = [
         Techno : Node.js, Express, MongoDB, React.`,
         image: '/portfolio8.jpg',
         type: 'site_fullstack',
-        url: 'https://delivrycart.vercel.app/'
+        url: 'https://delivrycart.vercel.app'
     },
 
 ];
