@@ -52,6 +52,16 @@ const projects = [
         type: 'site_fullstack',
         url: 'https://sibtbib-frontend.vercel.app/'
     },
+    {
+        id: 8,
+        title: 'DelivryCart',
+        description: `Développement du site web DelivryCart en fullstack avec Node.js et React.
+        Création d’une interface utilisateur et d’une plateforme admin connectées à un backend commun.
+        Techno : Node.js, Express, MongoDB, React.`,
+        image: '/portfolio8.jpg',
+        type: 'site_fullstack',
+        url: 'https://delivrycart.vercel.app/'
+    },
 
 ];
 export default projects;
