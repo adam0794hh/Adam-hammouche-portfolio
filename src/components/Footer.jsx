@@ -10,9 +10,9 @@ export default function Footer({ activeSection }) {
       </div>
 
       <div className="contact-card reveal">
-        <a href="mailto:ahammouche@hotmail.com" className="email-link">
+        <a href="mailto:adamdev-16@hotmail.com" className="email-link">
           <i className="fa-regular fa-envelope"></i>
-          ahammouche@hotmail.com
+          adamdev-16@hotmail.com
         </a>
         <div className="social-footer">
           <a href="#"><i className="fa-brands fa-linkedin"></i></a>
