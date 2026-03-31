@@ -1,25 +1,39 @@
 import React, { useState } from 'react'
 import "../components/formation.css"
 
-function Formation({ activeSection, handleClick }) {
-    return (
-        <section id='formation' className={`formation ${activeSection === 'formation' ? 'show-animate' : ''}`}>
-            <h2 className="heading">Ma <span>Formation</span></h2>
+function Formation({ activeSection }) {
+  return (
+    <section id='formation' className={`formation ${activeSection === 'formation' ? 'show-animate' : ''}`}>
+      <div className="section-header reveal">
+        <h2 className="heading">Mon <span className="accent">Parcours</span></h2>
+        <p>Formation académique et certifications professionnelles.</p>
+      </div>
 
-            <div className="formation-img">
-                <img src="/about.jpg" alt="" />
-                <span className="circle-spin"></span>
-            </div>
+      <div className="formation-grid reveal">
+        <div className="formation-card">
+          <div className="card-tag">Certification</div>
+          <h3 className="card-title">Intégrateur Web</h3>
+          <p className="card-org">OpenClassrooms</p>
+          <p className="card-desc">Maîtrise de l'intégration web, du responsive design et des animations CSS avancées. Gestion de projets complexes de la maquette à la mise en ligne.</p>
+        </div>
 
-            <div className="formation-content">
-                <h3>Devlopper FrontEnd</h3>
-                <p>Grâce à ma formation approfondie en tant qu'Intégrateur web, j'ai développé un vaste ensemble de compétences qui englobe la conception complète d'applications web réactives, aussi bien pour les plateformes mobiles Android que iOS. Mon savoir-faire s'étend également à l'animation de pages web, la création d'interfaces fonctionnelles, l'optimisation des performances, la maintenance de sites existants, et même la gestion intégrale de projets web, de leur conception initiale jusqu'à leur réalisation complète. Fort de cette expertise polyvalente, je suis en mesure d'apporter à chaque projet en ligne une esthétique élégante couplée à une fonctionnalité optimale. Ma passion pour l'intégration web se reflète dans mon engagement à offrir des solutions qui allient beauté visuelle et performance, faisant de moi un collaborateur précieux pour tout projet où ces qualités sont essentielles.
-                </p>
-                <a href="#Contact" className="forma-btn">Me Contacter</a>
-            </div>
+        <div className="formation-card">
+          <div className="card-tag">Spécialisation</div>
+          <h3 className="card-title">Développeur Front-End React</h3>
+          <p className="card-org">Auto-formation & Projets</p>
+          <p className="card-desc">Approfondissement de l'écosystème React, gestion d'état complexe et optimisation des performances.</p>
+        </div>
 
-        </section>
-    )
+        <div className="formation-card philosophy">
+          <h3 className="card-title">Ma Philosophie</h3>
+          <p className="card-desc">"Allier l'esthétique à la performance technique pour créer des produits digitaux qui marquent les esprits."</p>
+          <div className="btn-wrapper">
+             <a href="#Contact" className="btn btn-secondary">Discutons de votre projet</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Formation

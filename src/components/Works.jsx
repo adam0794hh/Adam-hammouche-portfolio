@@ -5,21 +5,24 @@ import WorkWrap from './WorkWrap'
 function Works({ activeSection }) {
   return (
     <section id='Works' className={`works ${activeSection === 'Works' ? 'show-animate' : ''}`}>
-      <h2 className='heading'>Mes <span>Services</span></h2>
-      <div className='works-container'>
+      <div className="section-header reveal">
+        <h2 className='heading'>Mes <span className="accent">Services</span></h2>
+        <p>Expertise complète en conception et développement digital.</p>
+      </div>
+      <div className='works-grid reveal'>
         <WorkWrap
           title={"APPLICATIONS E-COMMERCE"}
-          description={"Mon expertise en développement web me permet de concevoir des applications e-commerce conviviales et hautement performantes."}
+          description={"Conception d'applications e-commerce modernes, sécurisées et optimisées pour la conversion."}
           icon={"fa-shopping-cart"}
         />
         <WorkWrap
-          title={"APPLICATIONS WEB & MOBILES"}
-          description={"Je développe des applications web et mobiles qui s'adaptent à tous les supports : smartphones, tablettes et ordinateurs de bureau."}
+          title={"WEB & MOBILE"}
+          description={"Développement multi-plateforme garantissant une expérience fluide sur tous les terminaux."}
           icon={"fa-mobile-alt"}
         />
         <WorkWrap
-          title={"ENGAGEMENT D'ACCESSIBILITÉ"}
-          description={"L'accessibilité est une priorité. Je m'efforce de rendre vos applications accessibles à tous, y compris aux personnes en situation de handicap."}
+          title={"ACCESSIBILITÉ & UX"}
+          description={"Engagement fort pour une inclusion numérique totale et une ergonomie sans compromis."}
           icon={"fa-universal-access"}
         />
       </div>

@@ -1,27 +1,32 @@
 import React from 'react'
 import "../components/footer.css"
 
-export default function Footer({ activeSection, handleClick }) {
+export default function Footer({ activeSection }) {
   return (
     <section id='Contact' className={`contact ${activeSection === 'Contact' ? 'show-animate' : ''}`}>
-      <div className='contact-container'>
-        <div className='contact-details'>
-          <div className='contact-title'>
-            <h2>Me <span>contacter ici</span></h2>
-            
-          </div>
-          <div className='contact-email'>
-            <a href='mailto:ahammouche@hotmail.com'>
-              <img className='email-icon' src='/email.png'></img>
-            </a>
-          </div>
+      <div className="section-header reveal">
+        <h2 className="heading">Prêt à <span className="accent">Collaborer ?</span></h2>
+        <p>Une idée, un projet ou simplement envie de discuter ? Mon terminal est ouvert.</p>
+      </div>
+
+      <div className="contact-card reveal">
+        <a href="mailto:ahammouche@hotmail.com" className="email-link">
+          <i className="fa-regular fa-envelope"></i>
+          ahammouche@hotmail.com
+        </a>
+        <div className="social-footer">
+          <a href="#"><i className="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i className="fa-brands fa-github"></i></a>
         </div>
       </div>
 
-      <div className="footer">
-            <div className='footer-text'><p>© 2023 Adam HAMMOUCHE, Tous droits réservés.</p></div>
-            <div className='icon-top'><a href='#'><i className="fa-solid fa-arrow-up"></i></a></div>
+      <footer className="final-footer">
+        <div className="footer-line"></div>
+        <div className="footer-content">
+          <p>© {new Date().getFullYear()} Adam Hammouche. Built with Passion & Code.</p>
+          <a href="#" className="scroll-top"><i className="fa-solid fa-arrow-up"></i></a>
         </div>
+      </footer>
     </section>
-  )
+  );
 }

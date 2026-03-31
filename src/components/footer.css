@@ -1,141 +1,107 @@
 .contact {
-    background: #1F242D;
-    color: #FFF;
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 100px;
-    padding-bottom: 0
+  background: var(--bg-dark);
+  padding: 100px 10% 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.contact-container {
-    display: flex;
+.contact-card {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 60px;
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  transition: var(--transition);
+}
+
+.contact-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--cyan-glow);
+}
+
+.email-link {
+  font-size: 1.8rem;
+  font-family: var(--font-heading);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  transition: var(--transition);
+}
+
+.email-link i {
+  color: var(--accent);
+}
+
+.email-link:hover {
+  color: var(--accent);
+}
+
+.social-footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-footer a {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.social-footer a:hover {
+  color: var(--accent);
+  transform: translateY(-5px);
+}
+
+.final-footer {
+  margin-top: 100px;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background: var(--glass-border);
+  margin-bottom: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.scroll-top:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: var(--cyan-glow);
+}
+
+@media (max-width: 768px) {
+  .email-link {
+    font-size: 1.2rem;
+  }
+  .footer-content {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-details {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-title {
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.contact-title h2 {
-    color: #FFF;
-    font-size: 55px;
-    padding-bottom: 3rem;
-    text-transform: uppercase;
-}
-
-.contact-email {
-    margin-bottom: 5rem;
-    position: relative;
-    display: inline-block;
-}
-
-.email-icon {
-    width: 300px;
-    animation: move 2s ease-in-out infinite;
-}
-
-.footer {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: #112E42;
-}
-
-.icon-top a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem;
-    background: #0ef;
-    border: .2rem solid #0ef;
-    border-radius: .6rem;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.icon-top a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #112E42;
-    z-index: -1;
-    transition: .5s ease;
-}
-
-.icon-top a:hover::before {
-    width: 100%;
-}
-
-.icon-top a i {
-    font-size: 22px;
-    color: #081B29;
-}
-
-.contact.show-animate .animate.scroll {
-    transition-delay: calc(.3 * var('--i'));
-    width: 0;
-}
-
-@keyframes move {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.3);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@media (max-width:768px) {
-    .contact {
-        position: relative;
-    }
-    .footer {
-        padding: 1rem 4%;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
-
-    .footer-text {
-        width: 73%;
-        font-size: 10px;
-        white-space: nowrap;
-    }
-
-    .contact-title h2 {
-        font-size: 30px;
-    }
-
-    .email-icon {
-        width: 250px;
-    }
-
-    .icon-top a i {
-        font-size: 20px;
-    }
+    gap: 20px;
+  }
 }

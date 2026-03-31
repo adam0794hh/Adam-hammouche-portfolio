@@ -25,55 +25,25 @@ function Portfolio({ activeSection, handleClick }) {
   });
   return (
     <section id='Portfolio' className={`portfolio ${activeSection === 'Portfolio' ? 'show-animate' : ''}`}>
-      <div className='filter-button'>
-        <div className='portfolio-title'>
-          <h2>Mon <span>Portfolio</span></h2>
-        </div>
-        <div className="button-box">
-          <div className='box-1' >
-            <button
-              className={activeFilter === 'all' ? 'button active' : 'button'}
-              onClick={() => setActiveFilter('all')}
-            >
-              Tous
-            </button>
-            <button
-              className={activeFilter === 'site_vitrine' ? 'button active' : 'button'}
-              onClick={() => setActiveFilter('site_vitrine')}
-            >
-              Sites Vitrines
-            </button>
-            {/* <button
-              className={activeFilter === 'site_dynamique' ? 'button active' : 'button'}
-              onClick={() => setActiveFilter('site_dynamique')}
-            >
-              Sites Dynamiques
-            </button> */}
-          </div>
-          <div className='box-1'>
-            <button
-              className={activeFilter === 'site_wordpress' ? 'button active' : 'button'}
-              onClick={() => setActiveFilter('site_wordpress')}
-            >
-              Sites Wordpress
-            </button>
-            <button
-              className={activeFilter === 'site_fullstack' ? 'button active' : 'button'}
-              onClick={() => setActiveFilter('site_fullstack')}
-            >
-              Sites Fullstack
-            </button>
-          </div>
-        </div>
+      <div className="section-header reveal">
+        <h2 className="heading">Projets <span className="accent">Sélectionnés</span></h2>
+        <p>Une collection de mes travaux les plus récents.</p>
       </div>
-      <div className="site-cards-container">
+
+      <div className='filter-container reveal'>
+        <button className={activeFilter === 'all' ? 'filter-btn active' : 'filter-btn'} onClick={() => setActiveFilter('all')}>Tous</button>
+        <button className={activeFilter === 'site_vitrine' ? 'filter-btn active' : 'filter-btn'} onClick={() => setActiveFilter('site_vitrine')}>Vitrines</button>
+        <button className={activeFilter === 'site_wordpress' ? 'filter-btn active' : 'filter-btn'} onClick={() => setActiveFilter('site_wordpress')}>WordPress</button>
+        <button className={activeFilter === 'site_fullstack' ? 'filter-btn active' : 'filter-btn'} onClick={() => setActiveFilter('site_fullstack')}>FullStack</button>
+      </div>
+
+      <div className="site-grid reveal">
         {filteredProjects.map((project) => (
-          <a target='_blank' rel='noopener noreferrer' href={project.url} key={project.id}>
+          <a target='_blank' rel='noopener noreferrer' href={project.url} key={project.id} className="grid-item">
             <SiteCard
               title={project.title}
               description={project.description}
               image={project.image}
-              className={project.type !== activeFilter && 'card-disappear'}
             />
           </a>
         ))}
