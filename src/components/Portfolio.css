@@ -5,8 +5,9 @@
 
 .filter-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 50px;
 }
 
@@ -136,7 +137,27 @@
 }
 
 @media (max-width: 768px) {
+  .portfolio {
+    padding: 60px 5%;
+  }
+
+  .filter-container {
+    gap: 8px;
+    margin-bottom: 35px;
+    padding: 0 5px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
   .site-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .site-card {
+    height: 280px;
   }
 }
