@@ -12,10 +12,11 @@
 }
 
 .header.show {
-  padding: 15px 10%;
-  background: rgba(3, 3, 3, 0.85);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--glass-border);
+  padding: 12px 10%;
+  background: rgba(5, 5, 5, 0.92);
+  backdrop-filter: blur(25px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -38,13 +39,15 @@
 .navbar a {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: var(--text-secondary);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   position: relative;
-  transition: var(--transition-fast);
+  transition: all 0.3s ease;
   cursor: pointer;
+  padding: 5px 0;
+  text-decoration: none;
 }
 
 .navbar a:hover, .navbar a.active {
@@ -54,17 +57,17 @@
 .navbar a::before {
   content: "";
   position: absolute;
-  top: -20px;
-  left: 50%;
+  bottom: -5px;
+  left: 0;
   width: 0;
   height: 2px;
-  background: var(--accent);
-  box-shadow: 0 0 10px var(--accent);
-  transition: var(--transition-smooth);
-  transform: translateX(-50%);
+  background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.5);
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.navbar a.active::before {
+.navbar a.active::before,
+.navbar a:hover::before {
   width: 100%;
 }
 

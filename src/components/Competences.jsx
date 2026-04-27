@@ -40,15 +40,6 @@ function Competences({ activeSection }) {
           </div>
         ))}
 
-        {/* GitHub Card */}
-        <div className="bento-card medium github">
-          <h3 className="card-title">GitHub Repos</h3>
-          <div className="repo-links">
-             <a href="https://github.com/adam0794hh/Sibtbib" target="_blank" rel="noreferrer">Sibtbib Project <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
-             <a href="https://github.com/adam0794hh/OC-Project-Oh-my-food" target="_blank" rel="noreferrer">OhMyFood <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
-             <a href="https://github.com/adam0794hh/kasa" target="_blank" rel="noreferrer">Kasa React <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
       </div>
     </section>
   );

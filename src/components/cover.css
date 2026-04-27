@@ -16,21 +16,23 @@
 .pre-title {
   font-family: var(--font-mono);
   color: var(--accent);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  margin-bottom: 20px;
+  letter-spacing: 0.2em;
+  margin-bottom: 25px;
   opacity: 0;
   animation: fadeIn 0.8s forwards 0.2s;
+  font-weight: 600;
 }
 
 .home-content h1 {
   font-size: clamp(3rem, 10vw, 5rem);
   line-height: 0.95;
-  letter-spacing: -3px;
+  letter-spacing: -0.03em;
   margin-bottom: 30px;
   opacity: 0;
   animation: slideRight 0.8s forwards 0.4s;
+  color: var(--text-main);
 }
 
 .home-content p {
@@ -40,6 +42,7 @@
   margin-bottom: 45px;
   opacity: 0;
   animation: fadeIn 0.8s forwards 0.6s;
+  line-height: 1.6;
 }
 
 .btn-box {
@@ -69,6 +72,7 @@
   justify-content: center;
   color: #fff;
   transition: var(--transition-fast);
+  text-decoration: none;
 }
 
 .social-media a:hover {
@@ -78,7 +82,7 @@
   transform: translateY(-5px);
 }
 
-/* --- ADVANCED RADAR VISUAL --- */
+/* --- RADAR VISUAL --- */
 .hero-visual {
   position: relative;
   width: 450px;
@@ -99,8 +103,18 @@
   background: radial-gradient(circle, rgba(var(--accent-rgb), 0.03) 0%, transparent 70%);
 }
 
-.radar-circle.second { width: 70%; height: 70%; border-style: dashed; opacity: 0.5; }
-.radar-circle.third { width: 40%; height: 40%; border-color: rgba(var(--accent-rgb), 0.2); }
+.radar-circle.second {
+  width: 70%;
+  height: 70%;
+  border-style: dashed;
+  opacity: 0.5;
+}
+
+.radar-circle.third {
+  width: 40%;
+  height: 40%;
+  border-color: rgba(var(--accent-rgb), 0.2);
+}
 
 .scanner-line {
   position: absolute;
@@ -163,10 +177,12 @@
 }
 
 @keyframes fadeIn { to { opacity: 1; } }
+
 @keyframes slideRight {
   from { opacity: 0; transform: translateX(-50px); }
   to { opacity: 1; transform: translateX(0); }
 }
+
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }

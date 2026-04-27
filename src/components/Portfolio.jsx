@@ -11,15 +11,13 @@ function Portfolio({ activeSection, handleClick }) {
   // Fonction de filtrage des projets en fonction du filtre actif
   const filteredProjects = projects.filter((project) => {
     if (activeFilter === 'all') {
-      return true; // Afficher tous les projets
+      return true; // Affiche tous les projets
     } else if (activeFilter === 'site_vitrine') {
-      return project.type === 'site_vitrine'; // Afficher uniquement les projets de type "site_vitrine"
-    } else if (activeFilter === 'site_dynamique') {
-      return project.type === 'site_dynamique'; // Afficher uniquement les projets de type "site_dynamique"
+      return project.type === 'site_vitrine';
     } else if (activeFilter === 'site_wordpress') {
-      return project.type === 'site_wordpress'; // Afficher uniquement les projets de type "site_wordpress"
+      return project.type === 'site_wordpress';
     } else if (activeFilter === 'site_fullstack') {
-      return project.type === 'site_fullstack'; // Afficher uniquement les projets de type "site_fullstack"
+      return project.type === 'site_fullstack';
     }
     return false;
   });
@@ -44,6 +42,8 @@ function Portfolio({ activeSection, handleClick }) {
               title={project.title}
               description={project.description}
               image={project.image}
+              testimonial={project.testimonial}
+              featured={project.featured}
             />
           </a>
         ))}
